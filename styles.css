@@ -1,0 +1,16 @@
+div {
+	margin: 1em;
+	padding: 1em;
+}
+
+#top-container {
+	background-color: antiquewhite;
+}
+
+#bottom-container {
+	background-color: rgb(187, 209, 124);
+}
+
+#middle-container {
+	background-color: crimson;
+}

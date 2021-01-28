@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div id="top-container">
+			<pull-list id="fruits"></pull-list>
+		</div>
+		<div id="middle-container">
+			<pull-list id="soda"></pull-list>
+		</div>
+		<div id="bottom-container">
+			<pull-list id="tech"></pull-list>
+		</div>
+
+		<script type="module" src="./index.js"></script>
+		<script type="module">
+			import { LitElement, css, html } from 'lit-element';
+
+			const fruits = ['Apple', 'Orange', 'Grape', 'Orange'];
+			document.getElementById('fruits').setStaticList(fruits);
+
+			const soda = ['Coca cola', 'Pepsi Max', 'Sprite', 'Fanta'];
+			document.getElementById('soda').setStaticList(soda);
+
+			const tech = ['HTML', 'CSS', 'Javascript', 'PHP', 'SCSS'];
+			document.getElementById('tech').setStaticList(tech);
+		</script>
+	</body>
+</html>
